@@ -1,0 +1,252 @@
+@media (max-width:767px){
+/* ========================
+===========================
+ヘッダーレスポンシブCSS
+===========================
+============================*/
+
+  header{
+    height: 200px;
+  }
+
+  header h1{
+    font-size: 40px;
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  header h1 span{
+    font-size: 11px;
+    /* 後ほどウェブエンジニアの文字を横にする */
+  } 
+
+
+  /* ========================
+===========================
+navレスポンシブCSS
+===========================
+============================*/
+
+  #gnav ul{
+    width: 100%;
+    height: auto;
+  }
+
+  #gnav ul li{
+    padding: 0 15px;
+  }
+
+
+  #gnav ul li a{
+    font-size: 5px;
+  }
+
+  #gnav ul li:nth-child(1){
+    background-size: 13px 13px;
+    background-position-x: -10px;
+    /* 後ほどアイコンの位置の調整をする */
+  }
+
+/* ========================
+===========================
+プロフィールCSS
+===========================
+============================*/
+   #profile{
+     padding-top: 40px;
+     margin-bottom: 30px;
+     height: 600px;
+   }
+
+   #profile_title{
+     margin-bottom: 20px;
+   }
+
+   #profile_title h2{
+     font-size: 35px;
+     background-size: 35px 35px;
+     background-position-x: 60px;
+   }
+
+   #profile_content{
+     width: 100%;
+     height: 100%;
+     margin: 0 auto 50px auto;
+     display: flex;
+   }
+
+   #profile_img{
+     box-sizing: border-box;
+     width: 30%;
+   }
+
+   #profile_img img{
+     box-sizing: border-box;
+     width: 80px;
+     height: 80px;
+     margin-left: 50px;
+   }
+
+  #profile_text p{
+    width: 150px;
+    font-size: 12px;
+  }
+
+  
+/* ========================
+===========================
+スキルレスポンシブCSS
+===========================
+============================*/
+#skill{
+  margin-bottom: 30px;
+}
+
+#skill_title h2{
+  font-size: 35px;
+  background-size: 35px 35px;
+  background-position-x: 90px;
+}
+
+#skill_title{
+  margin-bottom: 30px;
+}
+
+#slill_first_p{
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+#slill_second_p{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#skill_front{
+  float:none;
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+#skill_back{
+  float:none;
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+#skill_third_p{
+   width: 100%;
+   margin-bottom: 340px;
+}
+
+#skill_DB{
+  float:none;
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+#skill_infra{
+  float:none;
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+#skill_fourth_p{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+#skill_other{
+  float:none;
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+#skill_Owned{
+  float:none;
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+/* ========================
+===========================
+ワークスレスポンシブCSS
+===========================
+============================*/
+
+#skill{
+  margin-bottom: 0;
+}
+
+
+#works_title{
+  margin-bottom:30px;
+}
+
+#works_title h2{
+font-size: 35px;
+background-size: 35px 35px;
+background-position-x: 75px;
+}
+
+#works_list{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#works_list ul{
+  display : flex;
+  flex-wrap : wrap;;
+}
+
+#works_list ul li{
+  width: 45%;
+}
+
+#works_list ul li:nth-child(3){
+ margin-top: 30px;
+ 
+}
+
+
+/* ========================
+===========================
+コンタクトレスポンシブCSS
+===========================
+============================*/
+
+#contact_title h2{
+font-size: 35px;
+background-size: 35px 35px;
+background-position-x: 50px;
+}
+
+
+
+
+/* ========================
+===========================
+フッターレスポンシブCSS
+===========================
+============================*/
+
+
+
+
+}
+
