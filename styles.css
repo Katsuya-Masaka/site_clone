@@ -57,7 +57,7 @@ header {
 #profile_image {
   width: 1170px;
   height: auto;
-  margin: 50px auto 100px auto;
+  margin: 50px auto 50px auto;
 }
 
 #profile_image img {
@@ -100,19 +100,26 @@ header {
 
 #profile_list li {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  font-size: 12px;
+  position: relative;
 }
 
 #profile_list dl {
-  margin: 0 auto;
+  padding-left: 50px;
   display: flex;
   justify-content: center;
 }
 
 #profile_list img {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 480px;
+  top: 15px;
+}
+
+#profile_list dt {
+  padding-left: 420px;
 }
 
 #aboutme {
@@ -135,25 +142,6 @@ header {
 #aboutme_content .subtitle h2 {
   text-align: center;
   color: black;
-}
-
-#aboutme_content .subtitle h2:after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -120px;
-  /*線の上下位置*/
-  width: 60px;
-  /*線の長さ*/
-  height: 5px;
-  /*線の太さ*/
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  /*位置調整*/
-  background-color: black;
-  /*線の色*/
-  border-radius: 2px;
-  /*線の丸み*/
 }
 
 #aboutme_p {
