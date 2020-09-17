@@ -1,0 +1,662 @@
+@charset "UTF-8";
+.cf {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ========================
+===========================
+ヘッダーCSS
+===========================
+============================*/
+header {
+  width: 100%;
+  height: 440px;
+  background: url(images/header.jpg) no-repeat;
+  background-size: 100%;
+}
+
+header h1 {
+  color: white;
+  font-size: 94px;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 1;
+}
+
+header h1 span {
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+#header_wrapper {
+  margin: 0 auto;
+  /* 質問：ここにマージンが必要な理由がわからない */
+}
+
+/* ========================
+===========================
+nav CSS
+===========================
+============================*/
+#gnav {
+  width: 100%;
+  height: 43px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#gnav ul {
+  width: 800px;
+  height: 50px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+#gnav ul li {
+  float: left;
+  padding: 0 40px;
+}
+
+#gnav ul li:nth-child(1) {
+  background: url(images/profile.png) no-repeat;
+  background-size: 24px 24px;
+  background-position-y: 6px;
+  background-position-x: 10px;
+}
+
+#gnav ul li:nth-child(2) {
+  background: url(images/skills.png) no-repeat;
+  background-size: 24px 24px;
+  background-position-y: 6px;
+  background-position-x: 10px;
+}
+
+#gnav ul li:nth-child(3) {
+  background: url(images/works.png) no-repeat;
+  background-size: 24px 24px;
+  background-position-y: 6px;
+  background-position-x: 10px;
+}
+
+#gnav ul li:nth-child(4) {
+  background: url(images/contact.png) no-repeat;
+  background-size: 24px 24px;
+  background-position-y: 6px;
+  background-position-x: 10px;
+}
+
+#gnav ul li a {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  text-decoration: none;
+}
+
+#gnav ul li:hover {
+  opacity: 0.8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* ========================
+===========================
+プロフィールCSS
+===========================
+============================*/
+#profile {
+  width: 100%;
+  height: auto;
+  padding-top: 145px;
+}
+
+#profile_title {
+  width: 100%;
+  height: auto;
+  margin: 0 auto 62px auto;
+}
+
+#profile_title h2 {
+  text-align: center;
+  line-height: 75px;
+  font-size: 50px;
+  background: url(images/profile.png) no-repeat;
+  background-size: 50px 50px;
+  background-position-y: center;
+  background-position-x: 35%;
+}
+
+#profile_content {
+  width: 1017px;
+  height: 222px;
+  margin: 0 auto 130px auto;
+}
+
+#profile_img {
+  width: 338px;
+  height: 222px;
+  margin-right: 48px;
+  float: left;
+}
+
+#profile_img img {
+  border-radius: 50%;
+  width: 338px;
+  height: 222px;
+}
+
+#profile_text p {
+  height: 222px;
+  width: 631px;
+  float: left;
+}
+
+#profile_text p a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* ========================
+===========================
+スキルCSS
+===========================
+============================*/
+#skill {
+  width: 100%;
+  height: auto;
+  margin-bottom: 130px;
+}
+
+#skill_title {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto 62px auto;
+}
+
+#skill_title h2 {
+  text-align: center;
+  line-height: 60px;
+  font-size: 50px;
+  background: url(images/skills.png) no-repeat;
+  background-size: 50px 50px;
+  background-position-y: center;
+  background-position-x: 39%;
+}
+
+/* テーブル作成CSS */
+.skill_subtitle {
+  font-size: 26px;
+  color: black;
+  text-align: center;
+}
+
+.skill_subtitle img {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+}
+
+.skill_explanation {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+
+table {
+  width: 465px;
+  table-layout: fixed;
+  text-align: center;
+}
+
+table:nth-of-type(1) {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  padding: 15px;
+}
+
+td {
+  padding: 12px;
+}
+
+tr td:nth-of-type(1) {
+  font-weight: bold;
+  color: black;
+}
+
+/* ボックス作成CSS */
+#slill_first_p {
+  width: 1017px;
+  height: auto;
+  margin: 0 auto 54px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: white;
+}
+
+#slill_second_p {
+  width: 1017px;
+  height: 385px;
+  margin: 0 auto 54px auto;
+}
+
+#skill_third_p {
+  width: 1017px;
+  height: 303px;
+  margin: 0 auto 54px auto;
+}
+
+#skill_fourth_p {
+  width: 1017px;
+  height: 575px;
+  margin: 0 auto 54px auto;
+}
+
+#skill_front {
+  width: 465px;
+  height: 385px;
+  background: white;
+  float: left;
+  margin-right: 84px;
+}
+
+#skill_back {
+  width: 465px;
+  height: 385px;
+  background: white;
+  float: left;
+}
+
+#skill_DB {
+  width: 465px;
+  height: 303px;
+  background: white;
+  float: left;
+  margin-right: 84px;
+}
+
+#skill_infra {
+  width: 465px;
+  height: 303px;
+  background: white;
+  float: left;
+}
+
+#skill_other {
+  width: 465px;
+  height: 575px;
+  background: white;
+  float: left;
+  margin-right: 84px;
+}
+
+#skill_Owned {
+  width: 465px;
+  height: 575px;
+  background: white;
+  float: left;
+}
+
+/* ========================
+===========================
+ワークスCSS
+===========================
+============================*/
+#works {
+  width: 100%;
+  height: auto;
+  margin-bottom: 130px;
+}
+
+#works_title {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto 62px auto;
+}
+
+#works_title h2 {
+  text-align: center;
+  line-height: 60px;
+  font-size: 50px;
+  background: url(images/works.png) no-repeat;
+  background-size: 50px 50px;
+  background-position-y: center;
+  background-position-x: 35%;
+}
+
+#works_list {
+  width: 100%;
+  height: 430px;
+  /* margin: 0;
+  padding: 0;
+  横の空白を消せない */
+}
+
+#works_list ul {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+}
+
+#works_list ul li {
+  width: 31%;
+  height: 421px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  list-style: none;
+}
+
+#works_list ul li .works_list_img {
+  width: 100%;
+  height: 240px;
+}
+
+#works_list ul li dl {
+  width: 100%;
+  height: 180px;
+  text-align: center;
+}
+
+#works_list ul li dl dt {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#works_list ul li dl dd {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-left: 0;
+}
+
+#works_list ul li dl dd:nth-child(1) {
+  padding-top: 10px;
+}
+
+#works_list ul li dl dd a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* ========================
+===========================
+コンタクトCSS
+===========================
+============================*/
+#contact {
+  width: 100%;
+  height: auto;
+}
+
+#contact_title {
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+}
+
+#contact_title h2 {
+  text-align: center;
+  line-height: 1;
+  font-size: 50px;
+  background: url(images/works.png) no-repeat;
+  background-size: 50px 50px;
+  background-position-y: center;
+  background-position-x: 35%;
+}
+
+.contact_img {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.contact_img a {
+  font-size: 16px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.contact_img a img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.contact_img a:hover {
+  border-bottom: 1px solid blue;
+}
+
+/* ========================
+===========================
+フッターCSS
+===========================
+============================*/
+footer {
+  width: 100%;
+  height: 138px;
+  background: #333333;
+}
+
+#footer_content {
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer ul li {
+  padding-right: 50px;
+  display: inline;
+}
+
+footer ul li a {
+  color: white;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+footer ul li a:hover {
+  border-bottom: 1px solid;
+  color: gainsboro;
+}
+
+footer p {
+  color: rgba(250, 250, 220, 0.8);
+  text-align: center;
+  font-size: 10px;
+  padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+  /* ========================
+  ===========================
+  ヘッダーレスポンシブCSS
+  ===========================
+  ============================*/
+  header {
+    height: 200px;
+  }
+  header h1 {
+    font-size: 40px;
+    padding-top: 20px;
+    text-align: left;
+  }
+  header h1 span {
+    font-size: 11px;
+    /* 後ほどウェブエンジニアの文字を横にする */
+  }
+  /* ========================
+===========================
+navレスポンシブCSS
+===========================
+============================*/
+  #gnav ul {
+    width: 100%;
+    height: auto;
+  }
+  #gnav ul li {
+    padding: 0 15px;
+  }
+  #gnav ul li a {
+    font-size: 5px;
+  }
+  #gnav ul li:nth-child(1) {
+    background-size: 13px 13px;
+    background-position-x: -10px;
+    /* 後ほどアイコンの位置の調整をする */
+  }
+  /* ========================
+  ===========================
+  プロフィールCSS
+  ===========================
+  ============================*/
+  #profile {
+    padding-top: 40px;
+    margin-bottom: 30px;
+    height: 600px;
+  }
+  #profile_title {
+    margin-bottom: 20px;
+  }
+  #profile_title h2 {
+    font-size: 35px;
+    background-size: 35px 35px;
+    background-position-x: 60px;
+  }
+  #profile_content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 50px auto;
+    display: flex;
+  }
+  #profile_img {
+    box-sizing: border-box;
+    width: 30%;
+  }
+  #profile_img img {
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+  }
+  #profile_text p {
+    width: 150px;
+    font-size: 12px;
+  }
+  /* ========================
+  ===========================
+  スキルレスポンシブCSS
+  ===========================
+  ============================*/
+  #skill {
+    margin-bottom: 30px;
+  }
+  #skill_title {
+    margin-bottom: 30px;
+  }
+  #slill_first_p {
+    box-sizing: border-box;
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  #slill_second_p {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #skill_front, #skill_back {
+    float: none;
+    box-sizing: border-box;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 30px auto;
+  }
+  #skill_third_p {
+    width: 100%;
+    margin-bottom: 340px;
+  }
+  #skill_DB, #skill_infra {
+    float: none;
+    box-sizing: border-box;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 30px auto;
+  }
+  #skill_fourth_p {
+    width: 100%;
+    margin-bottom: 300px;
+  }
+  #skill_other, #skill_Owned {
+    float: none;
+    box-sizing: border-box;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 30px auto;
+  }
+  /* ========================
+  ===========================
+  ワークスレスポンシブCSS
+  ===========================
+  ============================*/
+  #skill {
+    margin-bottom: 0;
+  }
+  #works_title {
+    margin-bottom: 30px;
+  }
+  #works_title h2 {
+    font-size: 35px;
+    background-size: 35px 35px;
+    background-position-x: 75px;
+  }
+  #works_list {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #works_list ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #works_list ul li {
+    width: 45%;
+  }
+  #works_list ul li:nth-child(3) {
+    margin-top: 30px;
+  }
+  /* ========================
+  ===========================
+  コンタクトレスポンシブCSS
+  ===========================
+  ============================*/
+  #contact_title h2 {
+    font-size: 35px;
+    background-size: 35px 35px;
+    background-position-x: 50px;
+  }
+  /* ========================
+  ===========================
+  フッターレスポンシブCSS
+  ===========================
+  ============================*/
+}
