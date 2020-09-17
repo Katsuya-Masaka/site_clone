@@ -3,253 +3,284 @@
   <head>
     <meta charset="utf-8">
     <title>naoto portfolio</title>
-    <link rel="stylesheet" href="new.min.css">
+    <link rel="stylesheet" href="styles.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
   </head>
-
-
 
   <body>
     <!-- ヘッダーここから -->
     <header>
-      <h1 id="header_wrapper">
-        Naoto Suzuki's portfolio<br>
-        <span>Web Engineer</span>
-      </h1>
+      <div id="header_content">
+        <h1 id="header_name">
+          カツヤの部屋
+        </h1>
+        <nav id="gnav" class="cf">
+          <ul class=cf>
+            <li><a  href="#">PROFILE</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">WORKS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- ヘッダーここまで -->
 
-
-    <!-- navここから -->
-    <nav id="gnav">
-      <ul class=cf>
-        <li><a  href="#">PROFILE</a></li>
-        <li><a href="#">SKILL</a></li>
-        <li><a href="#">WORKS</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>
-    <!-- navここまで -->
-
     <!-- プロフィールここから -->
     <div id="profile">
-      <div id="profile_title">
-        <h2>PROFILE</h2>
-      </div>
-      <div id="profile_content" class="cf">
-        <div id="profile_img">
-          <img src="images/profile_img.jpg" alt="プロフィール画像">
+      <div id="profile content">
+        <div id="profile_image">
+          <img src="images/1_6fF3In3j-vDxGelE1lk5WQ.jpg" alt="プロフィール画像">
         </div>
-        <div id="profile_text">
-          <p>
-            　はじめまして。平成5年生まれの25歳エンジニアのなおと<a href="#">(@naoto_7713)</a>と申します。社会人歴（IT業界）4年目です。<br>
-　新卒では中小企業のSIerに入社しました。常駐先ではウォータフォール型でデスクトップアプリ開発に携わりました。1年目は開発、2年目は問い合わせ対応と業務効率化のツールを作成です。 ただ、自分で勉強していくうちにもっと開発をしたい！！Webに携わりたい！！と思い転職を決意。<br>
-　web系の自社開発に入社し、現在はフルスタックエンジニアとして働いております。直近でフロントはSPAで実装して、バックエンドはAPI開発です。（2018年8月12日更新）<br>
-          </p>
+        <div id="profile_name">
+          <h2>カツヤ<br><span>ウェブエンジニア（になりたい）</span></h2>
+        </div>
+        <div id="profile_list">
+
+          <ul>
+            <li>
+              <dl>
+                <dt><img src="images/contact.png" alt="アイコン画像"></dt>
+                <dd>1997 / 02 / 18</dd>
+             </dl>
+           </li>
+
+            <li>
+              <dl>
+                <dt><img src="images/contact.png" alt="アイコン画像"></dt>
+                <dd>東京都</dd>
+             </dl>
+           </li>
+           
+            <li>
+              <dl>
+                <dt><img src="images/contact.png" alt="アイコン画像"></dt>
+                <dd>masaka09021800@gmail.com</dd>
+             </dl>
+           </li>
+
+            <li>
+              <dl>
+                <dt><img src="images/contact.png" alt="アイコン画像"></dt>
+                <dd>twitter.com</dd>
+             </dl>
+           </li>
+
+            <li>
+              <dl>
+                <dt><img src="images/contact.png" alt="アイコン画像"></dt>
+                <dd>github.com</dd>
+             </dl>
+           </li>
+
+          </ul>
+
         </div>
       </div>
     </div>
     <!-- プロフィールここまで -->
 
+    <!-- プロフィール詳細ここから -->
+    <div id="aboutme">
+      <div id="aboutme_content">
+        <div class="subtitle">
+          <h2>私について</h2>
+        </div>
+        <div id="aboutme_p">
+          <p>これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。これは私の自己紹介です。</p>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- プロフィール詳細ここまで -->
+
+
     <!-- スキルここから -->
     <div id="skill">
+      <div id="skill_content">
+        <div id="skill_title">
+          <h2>スキル</h2>
+        </div>
 
-      <div id="skill_title">
-        <h2>SKILL</h2>
+       <div id="skill_table">
+          <div id="slill_first_p" class="skill_data">
+            <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">デザイン・コーディング</h3>
+            <p class="skill_explanation">基本的な事は一通りできます。CSSフレームワークはbootstrapを使いました。</p>
+            <table>
+              <tr>
+              <th>技術</th><th>経過年数</th><th>スキル</th>
+              </tr>
+              <tr>
+                <td>HTML</td><td>1年</td><td>★★★★☆</td>
+              </tr>
+              <tr>
+                <td>CSS3</td><td>1年</td><td>★★★★☆</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="skill_front" class="skill_data">
+              <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">フロントエンド</h3>
+              <p class="skill_explanation">直近ではAngular JSを使用して開発していました。</p>
+              <table>
+                <tr>
+                <th>技術</th><th>経過年数</th><th>スキル</th>
+                </tr>
+                <tr>
+                  <td>Javascript</td><td>2年</td><td>★★★★★</td>
+                </tr>
+                <tr>
+                  <td>JQuery</td><td>2年</td><td>★★★☆☆</td>
+                </tr>
+                <tr>
+                  <td>Angular JS</td><td>1年</td><td>★★★★☆</td>
+                </tr>
+              </table>
+            </div>
+
+            <div id="skill_back" class="skill_data">
+              <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">バックエンド</h3>
+              <p class="skill_explanation">直近ではAPI開発でLaravelを使用しました。</p>
+              <table>
+                <tr>
+                <th>技術</th><th>経過年数</th><th>スキル</th>
+                </tr>
+                <tr>
+                  <td>VB.NET</td><td>1年</td><td>★★★★☆</td>
+                </tr>
+                <tr>
+                  <td>PHP5.6,7</td><td>1年</td><td>★★★★★</td>
+                </tr>
+              </table>
+            </div>
+
+          
+            <div id="skill_DB" class="skill_data">
+              <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">DB</h3>
+              <p class="skill_explanation">直近ではMySQLを使用しました。</p>
+              <table>
+                <tr>
+                <th>技術</th><th>経過年数</th><th>スキル</th>
+                </tr>
+                <tr>
+                  <td>OracleL</td><td>2年</td><td>★★★★☆</td>
+                </tr>
+                <tr>
+                  <td>MySQL</td><td>1年</td><td>★★★★☆</td>
+                </tr>
+              </table>
+            </div>
+
+            <div id="skill_infra" class="skill_data">
+              <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">インフラ・サーバー</h3>
+              <p class="skill_explanation">awsではEC2、RDS、cloudwathch等を触っています。</p>
+              <table>
+                <tr>
+                <th>技術</th><th>経過年数</th><th>スキル</th>
+                </tr>
+                <tr>
+                  <td>Apache</td><td>1年</td><td>★★★☆☆</td>
+                </tr>
+                <tr>
+                  <td>aws(EC2、RDS等）</td><td>1年</td><td>★★★☆☆</td>
+                </tr>
+              </table>
+            </div>
+
       </div>
-
-      <div id="slill_first_p">
-        <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">デザイン・コーディング</h3>
-        <p class="skill_explanation">基本的な事は一通りできます。CSSフレームワークはbootstrapを使いました。</p>
-        <table>
-          <tr>
-           <th>技術</th><th>経過年数</th><th>スキル</th>
-          </tr>
-          <tr>
-            <td>HTML</td><td>1年</td><td>★★★★☆</td>
-          </tr>
-          <tr>
-            <td>CSS3</td><td>1年</td><td>★★★★☆</td>
-          </tr>
-        </table>
-      </div>
-
-      <div id="slill_second_p" class="cf">
-      <!-- ２段落目のBOX -->
-   
-       <div id="skill_front">
-          <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">フロントエンド</h3>
-          <p class="skill_explanation">直近ではAngular JSを使用して開発していました。</p>
-          <table>
-            <tr>
-             <th>技術</th><th>経過年数</th><th>スキル</th>
-            </tr>
-            <tr>
-              <td>Javascript</td><td>2年</td><td>★★★★★</td>
-            </tr>
-            <tr>
-              <td>JQuery</td><td>2年</td><td>★★★☆☆</td>
-            </tr>
-            <tr>
-              <td>Angular JS</td><td>1年</td><td>★★★★☆</td>
-            </tr>
-          </table>
-        </div>
-
-        <div id="skill_back">
-          <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">バックエンド</h3>
-          <p class="skill_explanation">直近ではAPI開発でLaravelを使用しました。</p>
-          <table>
-            <tr>
-             <th>技術</th><th>経過年数</th><th>スキル</th>
-            </tr>
-            <tr>
-              <td>VB.NET</td><td>1年</td><td>★★★★☆</td>
-            </tr>
-            <tr>
-              <td>PHP5.6,7</td><td>1年</td><td>★★★★★</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div id="skill_third_p" class="cf">
-      <!-- ３段楽目のBOX -->
-        <div id="skill_DB">
-          <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">DB</h3>
-          <p class="skill_explanation">直近ではMySQLを使用しました。</p>
-          <table>
-            <tr>
-             <th>技術</th><th>経過年数</th><th>スキル</th>
-            </tr>
-            <tr>
-              <td>OracleL</td><td>2年</td><td>★★★★☆</td>
-            </tr>
-            <tr>
-              <td>MySQL</td><td>1年</td><td>★★★★☆</td>
-            </tr>
-          </table>
-        </div>
-
-        <div id="skill_infra">
-          <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">インフラ・サーバー</h3>
-          <p class="skill_explanation">awsではEC2、RDS、cloudwathch等を触っています。</p>
-          <table>
-            <tr>
-             <th>技術</th><th>経過年数</th><th>スキル</th>
-            </tr>
-            <tr>
-              <td>Apache</td><td>1年</td><td>★★★☆☆</td>
-            </tr>
-            <tr>
-              <td>aws(EC2、RDS等）</td><td>1年</td><td>★★★☆☆</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div id="skill_fourth_p" class="cf" >
-      <!-- ４段楽目のBOX -->
-        <div id="skill_other">
-          <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">その他</h3>
-          <p class="skill_explanation">開発等で使用したツールやFWです。</p>
-          <table>
-            <tr>
-             <th>技術</th><th>経過年数</th><th>スキル</th>
-            </tr>
-            <tr>
-              <td>monaca(cordova)</td><td>1年</td><td>★★★☆☆</td>
-            </tr>
-            <tr>
-              <td>SwaggerL</td><td>1年</td><td>★★★★☆</td>
-            </tr>
-            <tr>
-              <td>git</td><td>1年</td><td>★★★★☆</td>
-            </tr>
-            <tr>
-              <td>SVN</td><td>1年</td><td>★★☆☆☆</td>
-            </tr>
-            <tr>
-              <td>slack</td><td>2年</td><td>★★★★★</td>
-            </tr>
-            <tr>
-              <td>postman</td><td>1年</td><td>★★★★☆</td>
-            </tr>
-          </table>
-        </div>
-
-        <div id="skill_Owned">
-          <h3 class="skill_subtitle"><img src="images/contact.png" alt="タイトル">保有資格</h3>
-          <p class="skill_explanation">社会人になってから取得したものです。</p>
-          <table>
-            <tr>
-             <th>資格</th>
-            </tr>
-            <tr>
-              <td>基本情報技術者</td>
-            </tr>
-            <tr>
-              <td>Oracle Bronze</td>
-            </tr>
-            <tr>
-              <td>JavaSE8 silve</td>
-            </tr>
-          </table>
-        </div>
       </div>
     </div> 
     <!-- スキルここまで -->
 
     <!-- ワークスここから -->
     <div id="works">
-      <div id="works_title">
-        <h2>WORKS</h2>
-      </div>
-      <div id="works_list" class="cf">
-        <ul class="worls_ul">
-          <li>
-            <img src="images/works1.png" alt="" class="works_list_img">
-            <dl>
-              <dt>ポートフォリオ</dt>
-              <dd>自分自身のポートフォリオです。</dd>
-              <dd>HTML CSS/bootstrap4</dd>
-              <dd><a href="#">git hub</a></dd>
-            </dl>
-          </li>
-          <li>
-            <img src="images/works2.png" alt="" class="works_list_img">
-            <dl>
-              <dt>アイデア共有サイト</dt>
-              <dd>2つの事柄を掛け合わせアイデアを見つけるものです。</dd>
-              <dd>投稿とコメント機能を作成しました。</dd>
-              <dd>html/css3/bootstarap/php/laravel</dd>
-              <dd><a href="#">git hub</a></dd>
-            </dl>
-          </li>
-          <li>
-            <img src="images/works3.png" alt="" class="works_list_img">
-            <dl>
-              <dt>クローリング&スクレイピング</dt>
-              <dd>Webサイトから情報を抽出するスクリプトです。</dd>
-              <dd>PHP７.0</dd>
-              <dd><a href="#">git hub</a></dd>
-            </dl>
-          </li>
-        </ul>
+      <div id="works_content">
+        <div id="works_title">
+          <h2>作品集</h2>
+        </div>
+        <div id="works_list" class="cf">
+          <ul class="worls_ul">
+            <li>
+              <img src="images/works1.png" alt="" class="works_list_img">
+              <dl>
+                <dt>プロフィールサイト</dt>
+                <dd>自分自身のプロフィールサイトです。</dd>
+                <dd>HTML CSS</dd>
+                <dd><a href="#">git hub</a></dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/unnamed.jpg" alt="" class="works_list_img">
+              <dl>
+                <dt>COMING SOON </dt>
+                <dd>COMING SOON/COMING SOON/</dd>
+                <dd>COMING SOON/COMING SOON/</dd>
+                <dd>使用言語を記載します</dd>
+                <dd><a href="#">git hub</a></dd>
+              </dl>
+            </li>
+            <li>
+              <img src="images/unnamed.jpg" alt="" class="works_list_img">
+              <dl>
+                <dt>COMING SOON </dt>
+                <dd>COMING SOON/COMING SOON/</dd>
+                <dd>COMING SOON/COMING SOON/</dd>
+                <dd>使用言語を記載します</dd>
+                <dd><a href="#">git hub</a></dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- ワークスここまで -->
 
+    <!-- // #100daysOfCode -->
+    <div id="hyakudays">
+      <div id="hyakudays_content">
+        <div id="hyakudays_title">
+          <h2>#100daysOfCode</h2>
+        </div>
+
+      <div id="haykudays_list">
+        <ul>
+          <li>
+            <dl>
+              <dt>Day0</dt>
+              <dd><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Day 0:（昨日のログ）<br>✔︎HTML/CSS_udemy(DONE)<br>✔︎720mins<br>✔︎Progate→ドットインストールを受講した上で、サイトの模写をすることで理解が深まった。<a href="https://t.co/3YwQt3z4bn">https://t.co/3YwQt3z4bn</a><a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a></p>&mdash; katsuya #100DaysOfCode (@katsuya100Days1) <a href="https://twitter.com/katsuya100Days1/status/1305673592059777025?ref_src=twsrc%5Etfw">September 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>Day1</dt>
+              <dd><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Day1:（昨日）<br>✔︎HTML/CSS<br>✔︎静的サイトのサイトクローン作成<br>✔︎500mins<br>✔︎コード模写で浮き彫りにならなかった課題が見つかった。<a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a></p>&mdash; katsuya #100DaysOfCode (@katsuya100Days1) <a href="https://twitter.com/katsuya100Days1/status/1305996726478630912?ref_src=twsrc%5Etfw">September 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>Day2</dt>
+              <dd><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Day2:（昨日）<br>✔︎HTML/CSS<br>✔︎netlify<br>✔︎静的サイトのサイトクローン公開<br>✔︎420mins<br><br>😎 とりあえず公開できた<br>😟 レスポンシブデザイン（特に画像）が課題<a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a></p>&mdash; katsuya #100DaysOfCode (@katsuya100Days1) <a href="https://twitter.com/katsuya100Days1/status/1306357328283721729?ref_src=twsrc%5Etfw">September 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
     <!-- コンタクトここから -->
     <div id="contact">
+      <div id="contact_content">
       <div id="contact_title">
-        <h2>CONTACT</h2>
+        <h2>お問い合わせ</h2>
         <p>何かありましたらTwitterのDMからどしどしご連絡ください。</p>
       </div>
       <div class="contact_img">
-        <a  href="#"><img src="images/profile_img.jpg" alt="プロフィール画像"><br>Twitter</a>
+        <a  href="https://twitter.com/katsuya100Days1"><img src="images/Twitter_icon-icons.com_66803.png" alt="プロフィール画像"></a>
       </div>
+    </div>
     </div>
     <!-- コンタクトここまで -->
 

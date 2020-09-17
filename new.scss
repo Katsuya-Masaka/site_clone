@@ -19,50 +19,30 @@ body {
 
 header {
   width: 100%;
-  height: 440px;
-  background: url(images/header.jpg) no-repeat;
-  background-size: 100%;
-
-  h1{
-      color: white;
-      font-size: 94px;
-      color: white;
-      display: block;
-      text-align: center;
-      padding-top: 100px;
-      line-height: 1;
-    
-      span {
-        font-size: 36px;
-        margin-top: 30px;
-      }
-    }
+  height: 50px;
+  background: #f8541c;
 }
 
-#header_wrapper {
+#header_content{
+  width: 80%;
+  height: 60px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 
-  /* 質問：ここにマージンが必要な理由がわからない */
+#h1{
+  font-size: 30px;
+  font-weight: bold;
 }
 
 
-/* ========================
-===========================
-nav CSS
-===========================
-============================*/
 
 #gnav {
   width: 100%;
   height: 43px;
   padding: 10px;
   margin: 0 auto;
-
-
-@mixin back{
-  background-size: 24px 24px;
-  background-position-y: 6px;
-  background-position-x: 10px;
 }
 
   ul {
@@ -74,26 +54,6 @@ nav CSS
     li {
       float: left;
       padding: 0 40px;
-
-      &:nth-child(1) {
-        background: url(images/profile.png) no-repeat;
-        @include back;
-      }
-
-      &:nth-child(2) {
-        background: url(images/skills.png) no-repeat;
-        @include back;
-      }
-
-      &:nth-child(3) {
-        background: url(images/works.png) no-repeat;
-        @include back;
-      }
-
-      &:nth-child(4) {
-        background: url(images/contact.png) no-repeat;
-        @include back;
-      }
 
       a {
         font-size: 24px;
@@ -109,7 +69,6 @@ nav CSS
       }
     }
   }
-}
 
 
 /* ========================

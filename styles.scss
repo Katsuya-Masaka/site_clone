@@ -1,0 +1,517 @@
+// 全体設計
+@charset "utf-8";
+$color: rgba(0, 0, 0, 0.5);
+
+.cf {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  color: $color;
+  letter-spacing: 2px;
+}
+
+
+// ヘッダーここから
+@mixin bigbox_wh($bigbox_background){
+  width: 100%;
+  height: auto;
+  background: $bigbox_background;
+}
+
+header{
+  @include bigbox_wh(#f8541c);
+}
+
+#header_content{
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  h1{
+    font-size: 30px;
+    color: #fff;
+    margin-block-start: 10px;
+  }
+}
+
+#gnav li{
+  float: left;
+  margin-left: 30px;
+  list-style: none;
+
+  :last-child{
+    margin-left: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  :hover{
+    color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+// プロフィールここから
+#profile{
+  @include bigbox_wh(white);
+}
+
+@mixin midbox_wh{
+  width: 1170px;
+  height: auto;
+}
+
+#profile_image{
+  @include midbox_wh;
+  margin: 50px auto 100px auto;
+
+  img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+#profile_name{
+  @include midbox_wh;
+  margin: 0 auto;
+
+  h2{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+
+  span{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+  }
+}
+
+#profile_list{
+  @include midbox_wh;
+  margin: 50px auto 100px auto;
+
+
+  ul{
+    list-style: disc;
+    padding-left: 15px;
+}
+
+  li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  dl{
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+  }
+
+  img{
+    width: 20px;
+    height: 20px;
+  }
+  // CSSコード保留。
+}
+
+
+// プロフィール詳細ここから
+#aboutme{
+  @include bigbox_wh(#f4f4f4); 
+}
+
+#aboutme_content{
+  @include midbox_wh;
+  margin: 0 auto;
+}
+
+#aboutme_content .subtitle{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h2{
+    text-align: center;
+    color: black;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -120px;/*線の上下位置*/
+      width: 60px;/*線の長さ*/
+      height: 5px;/*線の太さ*/
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);/*位置調整*/
+      background-color: black;/*線の色*/
+      border-radius: 2px;/*線の丸み*/
+    }
+  }
+}
+
+
+#aboutme_p{
+  padding-bottom: 100px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+// スキルここから
+
+#skill {
+  @include bigbox_wh(white);
+}
+
+#skill_content{
+  @include midbox_wh;
+  margin: 0 auto;
+}
+
+#skill_title{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h2{
+    text-align: center;
+    color: black;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -120px;/*線の上下位置*/
+      width: 60px;/*線の長さ*/
+      height: 5px;/*線の太さ*/
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);/*位置調整*/
+      background-color: black;/*線の色*/
+      border-radius: 2px;/*線の丸み*/
+      // 何故かきかない
+    }
+  }
+}
+
+#skill_table{
+  width: 1170px;
+  height: 500px;
+  overflow: scroll;
+}
+
+.skill_data{
+  height: auto;
+  margin: 0 auto 20px auto;
+  width: 70%;
+  padding: 20px;
+  background: #f4f4f4;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  position: relative;
+
+  h3{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+
+  p{
+    text-align: center;
+    padding-bottom: 10px
+  }
+  table {
+    width: 465px;
+    table-layout: fixed;
+    text-align: center;
+  
+    &:nth-of-type(1) {
+      width: 100%;
+      table-layout: fixed;
+      text-align: center;
+    }
+  }
+  
+  th {
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  tr td:nth-of-type(1) {
+    font-weight: bold;
+    color: black;
+  }
+}
+
+.skill_data:last-child{
+  margin-bottom: 100px;
+}
+
+
+// ワークスここから
+
+#works {
+  @include bigbox_wh(#f4f4f4);
+  margin-bottom: 150px;
+}
+
+#works_content{
+  @include midbox_wh;
+  margin: 0 auto;
+}
+
+#works_title{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h2{
+    text-align: center;
+    color: black;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -120px;/*線の上下位置*/
+      width: 60px;/*線の長さ*/
+      height: 5px;/*線の太さ*/
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);/*位置調整*/
+      background-color: black;/*線の色*/
+      border-radius: 2px;/*線の丸み*/
+      // 何故かきかない
+    }
+  }
+}
+
+#works_list{
+  @include midbox_wh;
+  margin: 0 auto 100px auto;
+  height: 400px;
+  padding-bottom: 100px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+  }
+
+  li{
+    width: 30%;
+    height: 400px;
+    padding-bottom: 20px;
+    background: white;
+    list-style: none;
+  }
+
+  img{
+    width: 100%;
+    height: 200px;
+  }
+
+  dt{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
+  dd {
+      width: 100%;
+      font-size: 11px;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 5px;
+      margin-left: 0;
+  }
+}
+
+
+// #100daysOfCode
+
+#hyakudays{
+  @include bigbox_wh(white);
+  margin-bottom: 150px;
+}
+
+#hyakudays_content{
+  @include midbox_wh;
+  margin: 0 auto;
+}
+
+#hyakudays_title{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h2{
+    text-align: center;
+    color: black;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -120px;/*線の上下位置*/
+      width: 60px;/*線の長さ*/
+      height: 5px;/*線の太さ*/
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);/*位置調整*/
+      background-color: black;/*線の色*/
+      border-radius: 2px;/*線の丸み*/
+      // 何故かきかない
+    }
+  }
+}
+
+
+#haykudays_list ul{
+    width: 80%;
+    display: flex;
+    height: 300px;
+    overflow: scroll;
+}
+
+
+#haykudays_list ul li{
+      list-style: none;
+      width: 33%;
+      margin: 0 auto;
+}
+
+#haykudays_list ul li dt{
+        text-align: center;
+        font-weight: bold;
+        color: black;
+}
+
+#haykudays_list ul li dt dd{
+          height: 100px;
+          overflow: hidden;
+} 
+
+
+コンタクトここから
+#contact{
+  @include bigbox_wh(red);
+  margin-bottom: 150px;
+}
+
+#contact_content{
+  @include midbox_wh;
+  margin: 0 auto;
+}
+
+#contact_title{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h2{
+    text-align: center;
+    color: black;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -120px;/*線の上下位置*/
+      width: 60px;/*線の長さ*/
+      height: 5px;/*線の太さ*/
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);/*位置調整*/
+      background-color: black;/*線の色*/
+      border-radius: 2px;/*線の丸み*/
+      // 何故かきかない
+    }
+  }
+
+  p{
+    text-align: center;
+  }
+}
+
+.contact_img{
+  margin-bottom: 100px;
+
+  a{
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+// フッターここから
+footer {
+  width: 100%;
+  height: 138px;
+  background: #333333!important;
+}
+
+#footer_content {
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer {
+  ul li {
+    padding-right: 50px;
+    display: inline;
+
+    a {
+      color: white;
+      text-align: center;
+      list-style: none;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 12px;
+
+      &:hover {
+        border-bottom: 1px solid;
+        color: rgba(220, 220, 220, 1);
+      }
+    }
+  }
+
+  p {
+    color: rgba(250, 250, 220, 0.8);
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
